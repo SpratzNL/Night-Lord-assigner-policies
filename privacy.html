@@ -30,9 +30,9 @@
 
       <div class="note">
         <strong>In short:</strong> the bot reads your verification message and screenshot only
-        to confirm you are a Night Lord and to set your roles and nickname. Screenshots are
-        never stored. The only data kept is a short troubleshooting log created when a
-        verification <em>fails</em>, and that log is deleted once you successfully verify.
+        to confirm you are a Night Lord and to set your roles and nickname. This all happens in
+        memory, in real time. <strong>Nothing is stored</strong> — your messages and screenshots
+        are never saved to disk or kept after the check completes.
       </div>
 
       <h2>1. Information We Process</h2>
@@ -52,20 +52,17 @@
         <li>To confirm the in-game name you provided appears on the character card.</li>
         <li>To assign Discord roles after successful verification.</li>
         <li>To update your server nickname to match your verified in-game name.</li>
-        <li>To diagnose and fix verification errors when a verification attempt fails.</li>
       </ul>
 
       <h2>3. Data Retention</h2>
-      <p>Verification data is temporary by design:</p>
+      <p>The bot does <strong>not</strong> store your data. Verification messages and screenshots
+      are processed in memory in real time and are discarded immediately after the check
+      completes — they are never written to disk, logged, or retained.</p>
       <ul>
-        <li>When a verification attempt <strong>fails</strong>, a text-only troubleshooting log
-        may be stored. It may contain your Discord ID, username, the message you submitted,
-        and the text extracted from your screenshot — but <strong>not the image itself</strong>.</li>
-        <li>These logs exist solely to identify why verification failed.</li>
-        <li>Once you <strong>successfully verify</strong>, all troubleshooting logs associated
-        with your account are automatically deleted. The operator may also delete them sooner.</li>
-        <li>Roles and nicknames set by the bot are managed by Discord and persist until changed
-        by you or a server administrator.</li>
+        <li>No verification messages, screenshots, or logs are saved by the bot.</li>
+        <li>The only lasting result of verification is the Discord roles and nickname set on your
+        account, which are managed by Discord and persist until changed by you or a server
+        administrator.</li>
       </ul>
 
       <h2>4. Data Sharing</h2>
@@ -75,10 +72,10 @@
       <a href="https://discord.com/privacy" target="_blank" rel="noopener">Discord's Privacy Policy</a>.</p>
 
       <h2>5. Your Rights &amp; Data Deletion</h2>
-      <p>You may request that any troubleshooting log relating to your account be deleted, or ask
-      what data (if any) is currently held about you. Because logs are automatically removed on
-      successful verification, in most cases no data about you is retained. To make a request,
-      contact us using the details below.</p>
+      <p>Because the bot does not store any of your data, there is normally nothing to delete. You
+      may still contact us at any time using the details below to ask what data (if any) is held
+      about you or to raise a privacy concern. The roles and nickname the bot sets on your Discord
+      account can be removed by you or a server administrator at any time.</p>
 
       <h2>6. Children's Privacy</h2>
       <p>Discord requires all users to be at least 13 years old (or older where local law sets a
@@ -86,9 +83,10 @@
       requirement, and we do not knowingly process data from such users.</p>
 
       <h2>7. Security</h2>
-      <p>Any stored data is limited to verification troubleshooting and is accessible only to the
-      bot operator. We take reasonable measures to protect it, though no system can be guaranteed
-      to be perfectly secure.</p>
+      <p>Because the bot processes verification data only in memory and stores nothing, there is no
+      database or saved data to be exposed. Data transmitted while you interact with the bot is
+      handled over Discord's secure connection, though no system can be guaranteed to be perfectly
+      secure.</p>
 
       <h2>8. Changes to This Policy</h2>
       <p>This policy may be updated from time to time. Material changes will be reflected by
